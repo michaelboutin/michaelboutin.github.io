@@ -11,7 +11,7 @@
     color: white;
     position: fixed;
     top: -15px;;
-    left: 1000px;
+    left: 1500px;
     z-index: 1;
     font-size: 40px;
 }
@@ -20,6 +20,13 @@
     top: -500px;
     left: -150px;
     z-index: 2;
+}
+
+@media only screen and (max-width: 400px){
+.logo {
+   width: 20%;
+   height: 20%;
+}
 }
 .navbar ul li{
     list-style: none;
@@ -44,10 +51,30 @@
     position: absolute;
     left: 0;
     bottom: -10px;
-    transition: 0.5s;
+    transition: .5s;
 }
 .navbar ul li:hover::after{
     width: 100%;
+}
+@media only screen and (max-width: 400px){
+    .navbar{
+        width: 85%;
+        margin: auto;
+        padding: 35px 0;
+        justify-content: space-between;
+        color: white;
+        position: fixed;
+        top: -15px;;
+        left: 1500px;
+        z-index: 1;
+        font-size: 40px;
+    }
+    .navbar ul li{
+        list-style: none;
+        display: inline-block;
+        margin: 70px;
+        position: relative;
+}
 }
 .content{
     width: 100%;
